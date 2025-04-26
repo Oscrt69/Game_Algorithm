@@ -1,6 +1,10 @@
 import sys
 from time import sleep
+import os
 
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
 def animate():
     baris_kalimat = [
         [("abc def ", 0.10), ("ghi jkl", 1)],  # Baris pertama
@@ -14,3 +18,7 @@ def animate():
                 sleep(jeda)
         print()
 animate()    
+sleep(1)  
+clear()
+
+print("\n========== WELCOME TO SIMPLE ALGORITHM GAME ==========")
